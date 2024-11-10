@@ -1,1 +1,1 @@
-# odin-recipes
+# odin-recipes, My first proyect for developed web learn 'html'.My lvl is beginner in developed and I'm learning autodidact. This proyect has content of food-recipes only script in html. basic proyect for look with avanced
