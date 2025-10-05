@@ -1,0 +1,94 @@
+:root {
+--herofooterback: #1F2937;
+--font-main: 'roboto', sans-serif;
+}
+
+body{
+font-family: var(--font-main);
+}
+
+.header-container{
+display: flex;
+justify-content:space-between ;    /*separa logo y links*/
+align-items: center;               /*centra vertical*/
+padding: 0 150px;                     /*espacio arriba y abajo, espacioo latera;*/
+background-color: #1f2937;
+}
+
+.logo{
+    color: #f9faf8; 24px;
+}
+
+.link a {
+    color: #e5e7eb; 18px;
+    padding: 10px;
+    text-decoration: none; /*quitamos el subrayado basico de los enlaces*/
+}
+
+.link a:hover{  /*para cambiar el color al pasar el cursor por los links*/
+    color: chocolate;
+}
+
+.hero{
+background-color: var(--herofooterback);
+    display:flex;
+    /* justify-content: space-between; */
+    /* padding: 40px 150px; margen de altura y ancho */
+    /* gap: 30px; */
+
+}
+.left, .right{
+    flex: 1;
+    padding: 30px;
+
+}
+
+.left{
+    margin-right: 15px;
+    margin-left: 150px;
+
+}
+
+.left h1{
+    color: #f9faf8;font: 48px; font-weight: 900;
+
+}
+.left p{
+     color: #e5e7eb; 18px;
+
+}
+.left button{
+background-color: #3882f6;
+color: #e5e7eb;
+padding: 8px 24px;
+border: none;
+border-radius: 5px; /*hacer borde redondeado*/
+cursor: pointer;  /*cambia el cursor a una mano*/
+}
+
+ .left button:hover {
+      flex: 1;
+      background-color: darkblue; /* Color al pasar el cursor */
+      transform: scale(1.1); /* Se agranda un 10% */
+ }
+/* de aqui hacia abajo falta retocar la medida del lado derecho que sale gris y todo lo demas aunque el footer parece estar ok */
+.right {
+    background-color: #b3b3b3;
+    margin-left: 15px;
+    margin-right: 150px;
+    margin-bottom: 60px;
+    padding: 50 80px;
+
+
+}
+
+.right p{
+    text-align: center;
+}
+
+footer{
+    background-color: var(--herofooterback);
+    color: #e5e7eb;
+    padding: 10px;
+    text-align: center;
+}
