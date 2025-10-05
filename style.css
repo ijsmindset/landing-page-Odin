@@ -1,3 +1,4 @@
+
 :root {
 --herofooterback: #1F2937;
 --font-main: 'roboto', sans-serif;
@@ -77,14 +78,71 @@ cursor: pointer;  /*cambia el cursor a una mano*/
     margin-left: 15px;
     margin-right: 150px;
     margin-bottom: 60px;
-    padding: 50 80px;
-
-
+    width: 567px;
+    height: 189px;
+    box-sizing: border-box;
 }
 
 .right p{
     text-align: center;
+    margin-top: 50px;
 }
+
+.info-section{
+    color: #1f2937; 36px;
+    font-weight: 900;
+}
+
+.container{
+    text-align: center;
+}
+
+.image-section, .textimg{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; 
+
+}
+
+.items{
+ width: 150px;
+  height: 150px;
+  background-color: #ffffff;
+  border: 2px solid #3882f6;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+ 
+}
+
+.quote-section{
+    background-color: #e5e7eb;
+    color: #1F2937;36px; weight: 300;
+    
+}
+.item{
+   text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.thor{
+    text-align: center;
+    margin-left: 250px;
+}
+
+.down-section{
+    background-color: #3882f6;
+}
+.container1 button{
+    
+    background-color: #3882f6;
+}
+
 
 footer{
     background-color: var(--herofooterback);
