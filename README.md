@@ -1,4 +1,6 @@
 # odin-recipes, My first proyect for developed web learn HTML CSS Y JAVASCRIPT.My lvl is beginner in developed and I'm learning autodidact. This proyect has content of food-recipes only script in html. basic proyect for look my progress.10/11/2024.
+
+6/10/2025
 EN
 To begin studying for development, programming and more, I also work. I don't have much time to finish it. Almost a year later, I'm coming back to finish the pending task of making the landing page. It's not perfectly finished like the original design, although it looks similar, but I couldn't get it right. I'll redo it little by little later on. I've learned a lot, especially about the landing page. I've also had to look up a lot of information. I'll continue with the next part of JavaScript. (In the footer of the page, I put my name next to Project Odin. It's just a test. This project is The Odin Project. I just tried to do it as they tell you to do it for practice, although the design is not the same. It is based on the one provided by TOP. I apologise if there is any misunderstanding).
 -------------------------------------------------------------
