@@ -1,115 +1,120 @@
 
-:root {
+:root {    /* varaibles globales*/
 --herofooterback: #1F2937;
 --font-main: 'roboto', sans-serif;
+--bluesection: #3882f6;
+--general-text: #f9faf8;
 }
-
-body{
-font-family: var(--font-main);
+/* dejamos el font para toda la pagina*/
+body{ 
+    font-family: var(--font-main);
 }
-
+/*el encabezado */
 .header-container{
-display: flex;
-justify-content:space-between ;    /*separa logo y links*/
-align-items: center;               /*centra vertical*/
-padding: 0 150px;                     /*espacio arriba y abajo, espacioo latera;*/
-background-color: #1f2937;
+    display: flex;                      /*activamos flex*/
+    justify-content:space-between ;    /*separa logo y links*/
+    align-items: center;               /*centra vertical*/
+    padding: 0 150px;                     /*espacio arriba y abajo, espacioo latera;*/
+    background-color: var(--herofooterback);
 }
-
+/* llamamos child dentro de padre solo  cambio color*/
 .logo{
     color: #f9faf8; 24px;
 }
-
+/*llamamos child dentro de padre*/
 .link a {
     color: #e5e7eb; 18px;
-    padding: 10px;
+    padding: 10px; /*dar margen alrededor de ese box o boxes*/
     text-decoration: none; /*quitamos el subrayado basico de los enlaces*/
 }
-
+/*para cuando pase el cursor por encima*/
 .link a:hover{  /*para cambiar el color al pasar el cursor por los links*/
     color: chocolate;
 }
-
+/*parte alta de lapagina no el encabezado*/
 .hero{
-background-color: var(--herofooterback);
+    background-color: var(--herofooterback);
     display:flex;
-    /* justify-content: space-between; */
-    /* padding: 40px 150px; margen de altura y ancho */
-    /* gap: 30px; */
-
+    
 }
+/*llamar a los child de hero por herencia tienen flex activo*/
 .left, .right{
-    flex: 1;
-    padding: 30px;
+    flex: 1; /* con este parametro aprobechando la herencia ocupa todo el espacio posible*/
+    padding: 30px; /* dar margen al rededor*/
 
 }
 
 .left{
-    margin-right: 15px;
-    margin-left: 150px;
+    margin-right: 15px; /*poner limites de los margenes de un lado*/
+    margin-left: 150px;  /*poner limites de los margenes de un lado*/
 
 }
-
+/* llamada al titulo h1 de left*/
 .left h1{
-    color: #f9faf8;font: 48px; font-weight: 900;
+    color: #f9faf8;font: 48px; font-weight: 900; /* color fuente tamañó y medida de espacio bloque*/
 
 }
+/*llamada al parrafo de left*/
 .left p{
      color: #e5e7eb; 18px;
 
 }
+/*boton de left*/
 .left button{
-background-color: #3882f6;
-color: #e5e7eb;
-padding: 8px 24px;
-border: none;
-border-radius: 5px; /*hacer borde redondeado*/
-cursor: pointer;  /*cambia el cursor a una mano*/
+   background-color: var(--bluesection);
+   color: #e5e7eb;
+   padding: 8px 24px;  /*altura y ancho del boton*/
+   border: none;        /*sin borde visible*/
+   border-radius: 5px; /*hacer borde redondeado*/
+   cursor: pointer;  /*cambia el cursor a una mano*/
 }
-
+/* que hacer cuando pase el cursor por encima del boton left*/
  .left button:hover {
       flex: 1;
       background-color: darkblue; /* Color al pasar el cursor */
       transform: scale(1.1); /* Se agranda un 10% */
  }
-/* de aqui hacia abajo falta retocar la medida del lado derecho que sale gris y todo lo demas aunque el footer parece estar ok */
-.right {
-    background-color: #b3b3b3;
-    margin-left: 15px;
-    margin-right: 150px;
-    margin-bottom: 60px;
-    width: 567px;
-    height: 189px;
-    box-sizing: border-box;
-}
 
+.right {
+    background-color: #7c7c7c;
+    padding: 4rem ; 
+    margin: 3rem 3rem;              /* Márgenes externos: separa de los bordes del container */
+    border-radius: 2px;        /*bordes redondeados */
+    max-width: 400px;
+   
+}
+/* textp dentro de box right centrar y poner distancia altura*/
 .right p{
     text-align: center;
-    margin-top: 50px;
-}
+    margin-top: 20px; 
+    color: var(--general-text);
+ 
 
+
+}
+/* seccion del medio color y fuente*/
 .info-section{
     color: #1f2937; 36px;
     font-weight: 900;
 }
-
+/* este engloba los cuadros azules futuras imagenes alineadas al centro*/
 .container{
     text-align: center;
 }
-
+/*llamada a los hijos*/
 .image-section, .textimg{
-display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px; 
+  display: flex;            /* activamos flex*/
+  justify-content: center;  /*contenido en el centro */
+  align-items: center;      /*alineado*/
+  gap: 40px;                /*separacion entre items*/
 
 }
-
+/* este es la parte de abajo del box los textos*/
 .items{
- width: 150px;
+  width: 150px;
   height: 150px;
   background-color: #ffffff;
-  border: 2px solid #3882f6;
+  border: 2px solid var(--bluesection);
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -117,33 +122,60 @@ display: flex;
   font-weight: bold;
  
 }
-
+/* seccion cita parrafo*/
 .quote-section{
     background-color: #e5e7eb;
     color: #1F2937;36px; weight: 300;
     
-}
+} 
+/*engloba los dos hijos a trabajar */
 .item{
    text-align: center;
-  width: 100%;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+   width: 100%;
+   font-size: 1.2rem;
+   margin-bottom: 10px;
 }
-
+/*mover la zona de nombre del citado*/
 .thor{
     text-align: center;
     margin-left: 250px;
 }
-
+/*seccion abajo no el pie de pagina damos margen para que se vea el fondo detras del box*/
 .down-section{
-    background-color: #3882f6;
+    padding: 2rem;   /*tamaño html raiz text 1rem = 16px - 2rem = 32 px*/
 }
+/*box con los hijos a trabajar marando directrices genrales*/
+.container1{
+    background-color: var(--bluesection);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+/*CTA box*/
+.textcta{
+color: var(--general-text);
+margin-left: 100px;
+}
+/*button box*/
 .container1 button{
     
-    background-color: #3882f6;
+    background-color: var(--bluesection);
+    color: var(--general-text);
+    padding: 8px 24px;
+    margin-right: 100px;
+    margin-top: 20px;
+    border: 1px solid  var(--general-text) ;
+    border-radius: 5px; /*hacer borde redondeado*/
+    cursor: pointer;  /*cambia el cursor a una mano*/
 }
-
-
+/*button cuando pasa el cursor porencima*/
+.container1 button:hover{
+    flex: 1;
+      background-color: darkblue; /* Color al pasar el cursor */
+      transform: scale(1.1); /* Se agranda un 10% */
+}
+/*pie de pagina*/
 footer{
     background-color: var(--herofooterback);
     color: #e5e7eb;
